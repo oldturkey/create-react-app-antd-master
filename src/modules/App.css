@@ -1,12 +1,16 @@
 .ant-layout-header .logo {
-  width: 120px;
-  height: 31px;
+  width: 145px;
+  height: 40px;
   background: url(./logo.png)no-repeat;
   border-radius: 6px;
-  margin: 16px 24px 16px 0;
+  margin: 12px 24px 12px 0;
   float: left;
 }
 .ant-layout-header {
 	background-color: #fff;
 	height:66px;
+}
+
+.ant-layout-header {
+	border-bottom: 1px solid #e9e9e9
 }

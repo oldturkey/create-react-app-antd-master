@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Carousel } from 'antd';
+import './Home.css';
 
 export default React.createClass({
 	render() {
-		return <div style={{backgroundColor: '#fff',height: '800px'}}>Home</div>
+		return (
+			<Carousel autoplay>
+			    <div><img className="img" src={require('./banner1.jpg')}/></div>
+			    <div><img className="img" src={require('./banner2.jpg')}/></div>
+			    <div><img className="img" src={require('./banner3.jpg')}/></div>
+			  </Carousel>
+			)
 	}
 })
