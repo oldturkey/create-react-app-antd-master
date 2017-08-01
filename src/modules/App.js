@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './Header';
-import Home from './Home';
+import Home from './Home/Home';
 import Footer from './Footer'
 
 export default React.createClass({

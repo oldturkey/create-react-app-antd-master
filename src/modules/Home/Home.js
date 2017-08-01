@@ -1,11 +1,12 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import './Home.css';
+import { scrollScreen } from 'rc-scroll-anim';
 import enquire from 'enquire.js';
 import Content1 from './Content1';
 import Content2 from './Content2';
 import Content3 from './Content3';
-import './antMotion_style.less';
+import './less/antMotion_style.less';
+import './less/Home.css';
 
 export default class Home extends React.Component {
 	constructor(props) {

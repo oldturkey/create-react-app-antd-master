@@ -2,7 +2,7 @@ import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import './content3.less';
+
 class Content extends React.Component {
 
   static defaultProps = {
