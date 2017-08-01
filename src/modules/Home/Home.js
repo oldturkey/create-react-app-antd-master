@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'antd';
 import { scrollScreen } from 'rc-scroll-anim';
 import enquire from 'enquire.js';
+import Content0 from './Content0';
 import Content1 from './Content1';
 import Content2 from './Content2';
 import Content3 from './Content3';
@@ -39,13 +40,13 @@ export default class Home extends React.Component {
 		return (
 			<div className = 'templates-wrapper'>
 			<Carousel autoplay>
-			    <div><h3>1</h3></div>
-			    <div><h3>2</h3></div>
-			    <div><h3>3</h3></div>
-			    <div><h3>4</h3></div>
+			    <div><img  src={require('./banner1.jpg')} /></div>
+			    <div><img  src={require('./banner2.jpg')} /></div>
+			    <div><img  src={require('./banner3.jpg')} /></div>
 			  </Carousel>
+        <Content0 />
 			  <Content1 id="content_3_0" key="content_3_0" isMode={this.state.isMode}/>
-      		<Content2 id="content_2_0" key="content_2_0" isMode={this.state.isMode}/>
+      	<Content2 id="content_2_0" key="content_2_0" isMode={this.state.isMode}/>
      		<Content3 id="content_4_0" key="content_4_0" isMode={this.state.isMode}/>
 			 </div>
 			)
