@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Menu,Icon } from 'antd';
 import {Link} from 'react-router-dom';
-import './App.css';
+import './App.less';
 
 const { Header } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -26,8 +26,8 @@ class Head extends Component {
             <Menu.Item key="2"><Link to="/product/Millimeter">毫米波</Link></Menu.Item>
             <Menu.Item key="3"><Link to="/product/IoT">物联网</Link></Menu.Item>
           </SubMenu>
-        <Menu.Item key="solve">解决方案</Menu.Item>
-        <Menu.Item key="about">关于我们</Menu.Item>
+        <Menu.Item key="solve"><Link to="/solve">解决方案</Link></Menu.Item>
+        <Menu.Item key="about"><Link to="/about">关于我们</Link></Menu.Item>
       </Menu>
     </Header>
   </Layout>
