@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "antd": "^2.10.2",
+    "rc-animate": "^2.4.1",
+    "rc-queue-anim": "^1.2.1",
+    "rc-scroll-anim": "^1.0.7",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
