@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^2.10.2",
+    "rc-tween-one": "^1.4.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
