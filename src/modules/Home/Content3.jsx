@@ -64,7 +64,7 @@ class Content extends React.Component {
             id={`${props.id}-title`}
             reverseDelay={100}
           >
-             来自浙江大学技术力量
+             依托浙江大学技术力量
           </TweenOne>
           <TweenOne
             key="p"
