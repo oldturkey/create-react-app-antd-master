@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import enquire from 'enquire.js';
-import Header from './Header';
 import Home from './Home/Home';
 import Footer from './Footer';
 import Nav from './Nav';

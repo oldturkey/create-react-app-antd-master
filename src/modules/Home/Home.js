@@ -1,6 +1,5 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import { scrollScreen } from 'rc-scroll-anim';
 import enquire from 'enquire.js';
 import Content0 from './Content0';
 import Content1 from './Content1';
