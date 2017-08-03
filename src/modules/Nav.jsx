@@ -24,9 +24,14 @@ class Header extends React.Component {
     const props = { ...this.props };
     const isMode = props.isMode;
     delete props.isMode;
-    const navData = { menu1: '首页', menu2: '产品', menu3: '解决方案', menu4: '关于我们' };;
-    const navChildren = Object.keys(navData)
-      .map((key, i) => (<Item key={i}>{navData[key]}</Item>));
+    const navData =[
+      { title: '首页', link: '#/' },
+      { title: '产品', link: '#/product' },
+      { title: '解决方案', link: '#/solve' },
+      { title: '关于我们', link: '#/about' },
+    ];
+    const navChildren = navData.map((data,i) => (<Item key={i}><a href={data.link}>{data.title}</a></Item>));
+    
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}
@@ -37,7 +42,7 @@ class Header extends React.Component {
         animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
         id={`${this.props.id}-logo`}
       >
-        <img width="100%" src={require('./logo.png')} />
+        <img width="100%" src={require('./logo.jpg')} />
       </TweenOne>
       {isMode ? (<div
         className={`${this.props.className}-phone-nav${this.state.phoneOpen ? ' open' : ''}`}
