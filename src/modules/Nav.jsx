@@ -28,6 +28,7 @@ class Header extends React.Component {
       { title: '首页', link: '#/' },
       { title: '产品', link: '#/product' },
       { title: '解决方案', link: '#/solve' },
+      { title: '热点动态', link: '#/hotpot' },
       { title: '关于我们', link: '#/about' },
     ];
     const navChildren = navData.map((data,i) => (<Item key={i}><a href={data.link}>{data.title}</a></Item>));
