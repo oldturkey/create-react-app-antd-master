@@ -4,7 +4,7 @@ import enquire from 'enquire.js';
 import Footer from './Footer';
 import Home from './Home/Home';
 import Product from './Product/product';
-import Hotpot from './Hotpot/Hotpot';
+import Hotpot from './Hotpot/Hotpot'; 
 import Nav from './Nav';
 
 

@@ -1,0 +1,26 @@
+@media screen and (max-width: 767px) {
+  .product ul.ant-menu {
+  	width:100% !important;
+  }
+
+  .product .ant-card {
+  	display: none;
+  }
+}
+
+.custom-card {
+	margin:20px 0;
+	text-align:center;
+}
+.custom-card h3 {
+	line-height:32px;
+	font-weight: bold;
+}
+.custom-card  p {
+	line-height:25px;
+}
+
+.custom-image p {
+	text-align:center;
+	padding: 15px;
+}

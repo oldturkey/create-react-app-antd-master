@@ -19,7 +19,6 @@ class Header extends React.Component {
       phoneOpen: !this.state.phoneOpen,
     });
   }
-
   render() {
     const props = { ...this.props };
     const isMode = props.isMode;
