@@ -5,7 +5,39 @@ const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 export default class product extends React.Component{
+	getProChildren = (data) => {
+	 	// const links = data.contentLink.split(/\n/).filter(item => item);
+	 	const cTitle = data.title.split(/\n/).filter(item => item);
+	 	
+	 	const content = data.proImage.split(/\n/).filter(item => item)
+	 	.map((item,ii) => {
+	 		const cItem = item.trim();
+		 		return (
+			 		<Col lg={6} key={ii}>
+			 			<Card style = {{width:240}} bodyStyle ={{padding:10}}>
+			 				<div className = "custom-image">
+			 					<img alt ="example" width="100%" src = {cItem}/>
+			 				</div>
+			 				<div className = "custom-card">
+			 					<h3>{cTitle[ii]}</h3>
+			 					<p><a href='{}' >查看文档 </a></p>
+			 				</div>
+			 			</Card>
+			 		</Col>
+		 		);
+	 		});	
+	 	return content;
+	 }
+	 handleClick = (e) => {
+	    alert(e.target);
+	  }
+
 	render(){
+		const proData = {
+			ISS:{proImage:'http://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg',title:'基于以太网的8路SSI数据\nPCI接口的4路SSI数据采集\nSSI信号模拟器\n基于USB的8路SSI数据采集\ncPCI SSI编码器数据采集\n串口SSI编码器数据采集解',contentLink:""},	
+		};
+		const ISS = proData.ISS;
+		const proChildren = this.getProChildren(ISS);
 		return (
 		  <div className="sidebar">
 		    <Row>
@@ -56,94 +88,7 @@ export default class product extends React.Component{
 			    </Col>
 			    <Col lg={19} offset={2}>
 			    	<Row>
-			    		<Col lg={6} >
-			    			<Card style={{ width: 240 }} bodyStyle={{ padding: 10 }}>
-							    <div className="custom-image">
-							      <img alt="example" width="100%" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-							    </div>
-							    <div className="custom-card">
-							      <h3>Europe Street beat</h3>
-							      <p>www.instagram.com</p>
-							    </div>
-							  </Card>
-			    		</Col>
-			    		<Col lg={6}>
-			    			<Card style={{ width: 240 }} bodyStyle={{ padding: 10 }}>
-							    <div className="custom-image">
-							      <img alt="example" width="100%" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-							    </div>
-							    <div className="custom-card">
-							      <h3>Europe Street beat</h3>
-							      <p>www.instagram.com</p>
-							    </div>
-							  </Card>
-			    		</Col>
-			    		<Col lg={6}>
-			    			<Card style={{ width: 240 }} bodyStyle={{ padding: 10 }}>
-							    <div className="custom-image">
-							      <img alt="example" width="100%" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-							    </div>
-							    <div className="custom-card">
-							      <h3>Europe Street beat</h3>
-							      <p>www.instagram.com</p>
-							    </div>
-							  </Card>
-			    		</Col>
-			    		<Col lg={6}>
-			    			<Card style={{ width: 240 }} bodyStyle={{ padding: 10 }}>
-							    <div className="custom-image">
-							      <img alt="example" width="100%" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-							    </div>
-							    <div className="custom-card">
-							      <h3>Europe Street beat</h3>
-							      <p>www.instagram.com</p>
-							    </div>
-							  </Card>
-			    		</Col>
-			    		<Col lg={6}>
-			    			<Card style={{ width: 240 }} bodyStyle={{ padding: 10 }}>
-							    <div className="custom-image">
-							      <img alt="example" width="100%" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-							    </div>
-							    <div className="custom-card">
-							      <h3>Europe Street beat</h3>
-							      <p>www.instagram.com</p>
-							    </div>
-							  </Card>
-			    		</Col>
-			    		<Col lg={6}>
-			    			<Card style={{ width: 240 }} bodyStyle={{ padding: 10 }}>
-							    <div className="custom-image">
-							      <img alt="example" width="100%" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-							    </div>
-							    <div className="custom-card">
-							      <h3>Europe Street beat</h3>
-							      <p>www.instagram.com</p>
-							    </div>
-							  </Card>
-			    		</Col>
-			    		<Col lg={6}>
-			    			<Card style={{ width: 240 }} bodyStyle={{ padding: 10 }}>
-							    <div className="custom-image">
-							      <img alt="example" width="100%" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-							    </div>
-							    <div className="custom-card">
-							      <h3>Europe Street beat</h3>
-							      <p>www.instagram.com</p>
-							    </div>
-							  </Card>
-			    		</Col>
-			    		<Col lg={6}>
-			    			<Card style={{ width: 240 }} bodyStyle={{ padding: 10 }}>
-							    <div className="custom-image">
-							      <img alt="example" width="100%" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-							    </div>
-							    <div className="custom-card">
-							      <h3>Europe Street beat</h3>
-							      <p>www.instagram.com</p>
-							    </div>
-							  </Card>
-			    		</Col>
+			    		{proChildren}
 			    	</Row>
 			    </Col>
 			     </Row>
