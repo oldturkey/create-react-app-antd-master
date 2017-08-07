@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, Icon ,Card , Row, Col  } from 'antd';
-import './Menu.css';
+import './product.css';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
@@ -8,13 +8,12 @@ export default class product extends React.Component{
 	getProChildren = (data) => {
 	 	// const links = data.contentLink.split(/\n/).filter(item => item);
 	 	const cTitle = data.title.split(/\n/).filter(item => item);
-	 	
 	 	const content = data.proImage.split(/\n/).filter(item => item)
 	 	.map((item,ii) => {
 	 		const cItem = item.trim();
 		 		return (
-			 		<Col lg={6} key={ii}>
-			 			<Card style = {{width:240}} bodyStyle ={{padding:10}}>
+			 		<Col lg={6} xs={12} key={ii} className="proBox">
+			 			<Card style = {{width:240}} bodyStyle ={{padding:10}} className="contentCard">
 			 				<div className = "custom-image">
 			 					<img alt ="example" width="100%" src = {cItem}/>
 			 				</div>
@@ -28,15 +27,23 @@ export default class product extends React.Component{
 	 		});	
 	 	return content;
 	 }
+	 state = {
+	 	current: 'ISS'
+	 }
 	 handleClick = (e) => {
-	    alert(e.target);
+	    this.setState({
+	    	current:e.key
+	    })
 	  }
 
 	render(){
 		const proData = {
 			ISS:{proImage:'http://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg',title:'基于以太网的8路SSI数据\nPCI接口的4路SSI数据采集\nSSI信号模拟器\n基于USB的8路SSI数据采集\ncPCI SSI编码器数据采集\n串口SSI编码器数据采集解',contentLink:""},	
+			data:{proImage:'http://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg',title:'基于以太网的8路SSI数据\nPCI接口的4路SSI数据采集\nSSI信号模拟器\n基于USB的8路SSI数据采集\ncPCI SSI编码器数据采集\n串口SSI编码器数据采集解',contentLink:""}
 		};
-		const ISS = proData.ISS;
+		const current01 = this.state.current;
+		const ISS = proData[current01];
+
 		const proChildren = this.getProChildren(ISS);
 		return (
 		  <div className="sidebar">
@@ -50,8 +57,8 @@ export default class product extends React.Component{
 		        mode="inline"
 		      >
 		        <SubMenu key="sub1" title={<span><Icon type="mail" /><span>数据采集产品</span></span>}>
-		            <Menu.Item key="1">SSI信号采集与模拟</Menu.Item>
-		            <Menu.Item key="2">数据采集卡</Menu.Item>
+		            <Menu.Item key="ISS">SSI信号采集与模拟</Menu.Item>
+		            <Menu.Item key="data">数据采集卡</Menu.Item>
 		            <Menu.Item key="3">高速数据采集</Menu.Item>
 		        </SubMenu>
 		        <SubMenu key="sub2" title={<span><Icon type="setting" /><span>物联网产品</span></span>}>
@@ -72,7 +79,7 @@ export default class product extends React.Component{
 		         <SubMenu key="sub4" title={<span><Icon type="appstore" /><span>其他产品</span></span>}>
 		         </SubMenu>
 		      </Menu>
-			    <Card style={{ width: '100%' }} bodyStyle={{ padding: 0 }}>
+			    <Card style={{ width: '100%' }} bodyStyle={{ padding: 0 }} className="sidebarCard">
 			        <div className="custom-card">
 			          <h3>咨询我们</h3>
 			          <p>电 话:0571-87755736</p>
@@ -86,7 +93,7 @@ export default class product extends React.Component{
 			        </div>
 			     </Card>
 			    </Col>
-			    <Col lg={19} offset={2}>
+			    <Col lg={19} offset={2} className="contentBox">
 			    	<Row>
 			    		{proChildren}
 			    	</Row>
