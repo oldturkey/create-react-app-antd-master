@@ -4,6 +4,7 @@ import enquire from 'enquire.js';
 import Footer from './Footer';
 import Home from './Home/Home';
 import Product from './Product/product';
+import Solve from './solve/solve';
 import Hotpot from './Hotpot/Hotpot'; 
 import Nav from './Nav';
 
@@ -44,6 +45,7 @@ export default class App extends React.Component {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/product' component={Product} />
+        <Route path='/solve' component={Solve} />
         <Route path='/hotpot' component={Hotpot} />
       </Switch>
       <Footer id="footer_1_0" key="footer_1_0" isMode={this.state.isMode}/>
