@@ -39,12 +39,12 @@ export default class product extends React.Component{
 	render(){
 		const proData = {
 			ISS:{proImage:'http://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg',title:'基于以太网的8路SSI数据\nPCI接口的4路SSI数据采集\nSSI信号模拟器\n基于USB的8路SSI数据采集\ncPCI SSI编码器数据采集\n串口SSI编码器数据采集解',contentLink:""},	
-			data:{proImage:'http://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg',title:'基于以太网的8路SSI数据\nPCI接口的4路SSI数据采集\nSSI信号模拟器\n基于USB的8路SSI数据采集\ncPCI SSI编码器数据采集\n串口SSI编码器数据采集解',contentLink:""}
+			data:{proImage:'http://www.terabits.cn/uploads/allimg/170411/2-1F4111054060-L.png\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg\nhttp://ou1e80oz4.bkt.clouddn.com/QR.jpg',title:'基于以太网的8路SSI数据\nPCI接口的4路SSI数据采集\nSSI信号模拟器\n基于USB的8路SSI数据采集\ncPCI SSI编码器数据采集\n串口SSI编码器数据采集解',contentLink:""}
 		};
-		const current01 = this.state.current;
-		const ISS = proData[current01];
+		const currentPro = this.state.current;
+		const product = proData[currentPro];
 
-		const proChildren = this.getProChildren(ISS);
+		const proChildren = this.getProChildren(product);
 		return (
 		  <div className="sidebar">
 		    <Row>
