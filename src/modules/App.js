@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import enquire from 'enquire.js';
 import Footer from './Footer';
 import Home from './Home/Home';
@@ -42,12 +42,10 @@ export default class App extends React.Component {
       <div className="demo-nav">
         <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode}/>,
       </div>
-      <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/product' component={Product} />
         <Route path='/solve' component={Solve} />
         <Route path='/hotpot' component={Hotpot} />
-      </Switch>
       <Footer id="footer_1_0" key="footer_1_0" isMode={this.state.isMode}/>
     </div>
     );

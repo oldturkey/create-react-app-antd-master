@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
@@ -24,13 +25,13 @@ class Header extends React.Component {
     const isMode = props.isMode;
     delete props.isMode;
     const navData =[
-      { title: '首页', link: '#/' },
-      { title: '产品', link: '#/product' },
-      { title: '解决方案', link: '#/solve' },
-      { title: '热点动态', link: '#/hotpot' },
-      { title: '关于我们', link: '#/about' },
+      { title: '首页', link: '/' },
+      { title: '产品', link: '/product' },
+      { title: '解决方案', link: '/solve' },
+      { title: '热点动态', link: '/hotpot' },
+      { title: '关于我们', link: '/about' },
     ];
-    const navChildren = navData.map((data,i) => (<Item key={i}><a href={data.link}>{data.title}</a></Item>));
+    const navChildren = navData.map((data,i) => (<Item key={i}><Link to={data.link}>{data.title}</Link></Item>));
     
     return (<TweenOne
       component="header"
