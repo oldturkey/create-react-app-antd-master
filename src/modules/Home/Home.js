@@ -16,7 +16,6 @@ export default class Home extends React.Component {
       isMode: false
     };
   }
-
   componentDidMount() {
     // 适配手机屏幕;
     this.enquireScreen((isMode) => {
@@ -39,16 +38,16 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<div className = 'templates-wrapper'>
-			<Carousel autoplay>
-			    <div><img  src={require('./banner1.jpg')} /></div>
-			    <div><img  src={require('./banner2.jpg')} /></div>
-			    <div><img  src={require('./banner3.jpg')} /></div>
-			  </Carousel>
-        <Content0 />
-			  <Content1 id="content_3_0" key="content_3_0" isMode={this.state.isMode}/>
-      	<Content2 id="content_2_0" key="content_2_0" isMode={this.state.isMode}/>
-     		<Content3 id="content_4_0" key="content_4_0" isMode={this.state.isMode}/>
-        <Content4 />
+      <video  autoPlay="autoplay" loop="loop" muted className="videoOne">
+        <source src={require('./2.mp4')} type="video/mp4" />
+      </video>
+        <div className = "container">  
+          <Content0 />
+  			  <Content1 id="content_3_0" key="content_3_0" isMode={this.state.isMode}/>
+        	<Content2 id="content_2_0" key="content_2_0" isMode={this.state.isMode}/>
+       		<Content3 id="content_4_0" key="content_4_0" isMode={this.state.isMode}/>
+          <Content4 />
+        </div>
 			 </div>
 			)
 	}
