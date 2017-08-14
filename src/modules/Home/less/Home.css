@@ -4,8 +4,9 @@
 }
 
 .videoOne {
-    	max-width:1440px;
-    	margin:20px auto;
+    	width:95%;
+    	max-height: 860px;
+    	margin:0px auto 30px;
     } 
 @media screen and (max-width: 768px) {
     .videoOne {
