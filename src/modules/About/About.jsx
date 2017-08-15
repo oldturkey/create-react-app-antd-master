@@ -46,7 +46,7 @@ export default class product extends React.Component{
 								<div id='allmap' style={{ width:'80%',height:'350px',margin: '0px auto 40px' }}></div>
 								</Col>
 							 	<Col lg={7}>
-								 <Card style={{ width: '80%',margin:'15px auto 0'}} bodyStyle={{ padding: 0 }}>
+								 <Card style={{ width: '60%',margin:'15px auto 0'}} bodyStyle={{ padding: 30 }}>
 									    <div className="custom-image">
 									      <img alt="example" width="100%" src="http://ou1e80oz4.bkt.clouddn.com/QR.jpg" />
 									    </div>

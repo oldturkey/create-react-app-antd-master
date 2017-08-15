@@ -49,13 +49,13 @@ render(){
 		    	{solveChildren}
 		    </Row>
         <Modal
-                title={ this.state.data }
-                visible={this.state.visible}       
-                onCancel={this.hideModal}
-                footer={null}
-              >
-                <p style={{textIndent:'14px'}}>{ this.state.introduce }</p>
-              </Modal>
+          title={ this.state.data }
+          visible={this.state.visible}       
+          onCancel={this.hideModal}
+          footer={null}
+          >
+          <p style={{textIndent:'14px'}}>{ this.state.introduce }</p>
+        </Modal>
 		  </div>
     	)
 }

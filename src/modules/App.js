@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BackTop } from 'antd';
 import enquire from 'enquire.js';
 import Footer from './Footer';
 import Home from './Home/Home';
@@ -8,6 +9,7 @@ import Solve from './solve/solve';
 import Hotpot from './Hotpot/Hotpot'; 
 import About from './About/About';
 import Nav from './Nav';
+import './App.less';
 
 
 export default class App extends React.Component {
@@ -49,6 +51,7 @@ export default class App extends React.Component {
         <Route path='/hotpot' component={Hotpot} />
         <Route path='/about' component={About} />
       <Footer id="footer_1_0" key="footer_1_0" isMode={this.state.isMode}/>
+      <BackTop style={{right: '22px'}}/>
     </div>
     );
   }
