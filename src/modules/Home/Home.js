@@ -1,5 +1,6 @@
 import React from 'react';
 import enquire from 'enquire.js';
+import { BrowserRouter as Router,Switch, Route,Link } from 'react-router-dom';
 import Content0 from './Content0';
 import Content1 from './Content1';
 import Content2 from './Content2';
@@ -38,7 +39,7 @@ export default class Home extends React.Component {
 		return (
 			<div className = 'templates-wrapper'>
       <video  autoPlay="autoplay" loop="loop" muted className="videoOne">
-        <source src={require('./2.mp4')} type="video/mp4" />
+        <source src={require('./4.mp4')} type="video/mp4" />
       </video>
         <div className = "container">  
           <Content0 />

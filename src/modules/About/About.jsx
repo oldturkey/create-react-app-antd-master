@@ -54,7 +54,7 @@ export default class product extends React.Component{
 									      <p>扫一扫，关注微信公众号</p>
 									    </div>
 									  </Card>
-									  <p>浙江省杭州市西湖区文三路478号华星时代广场A座802</p>
+									  
 								</Col>	
 						 	</Row>
 					</div>			   		
