@@ -22,7 +22,7 @@ export default class product extends React.Component{
     }
 	getLiChildren = (data, i) => {
     return(
-    	<Col lg={7} className="cardBox">
+    	<Col key={i} lg={7} className="cardBox">
     		<Card title = {data.title} bordered={false} onClick={ () => this.showModal(data.title,data.introduce)}>
     			<div className="custom-image">
     				<img alt="carMonitoring" width="100%" className="solveImg" src={data.imgLink}  />

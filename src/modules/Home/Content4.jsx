@@ -9,7 +9,7 @@ const TabPane = Tabs.TabPane;
 export default class Content extends React.Component {
 	render(){
 		return (
-			<div>
+			<div className="content4">
 				<Hotpot />
 			</div>
 			)

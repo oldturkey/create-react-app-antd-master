@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Icon,Timeline,Row,Col,Card } from 'antd';
 
 import './About.less';
@@ -19,7 +18,6 @@ export default class product extends React.Component{
 	render(){
 		return (
 			<div className="about">
-				<div className="container">
 					<div className = "setup">	
 						<h2 className="v-title"><Icon type="home" /> 企业介绍</h2>
 						<div className="desc">
@@ -33,7 +31,7 @@ export default class product extends React.Component{
 						</div>
 						<h2 className="v-title"><Icon type="schedule" /> 企业履历</h2>
 						<div className ="set-detail clearfix">
-							<Timeline pending={<a href="#">See more</a>} style={{marginLeft:'36px'}}>
+							<Timeline pending={<p>飞速发展中</p>} style={{marginLeft:'36px'}}>
 							    <Timeline.Item>杭州钛比科技有限公司正式成立 2014-01-24</Timeline.Item>
 							    <Timeline.Item>我司获杭州市青蓝计划资助及浙江省科技型中小企业认定 2015-06-28</Timeline.Item>
 							    <Timeline.Item>我司推出一键抄电表一键缴电费平台 杭州向万物互联时代又近一步 2017-04-13</Timeline.Item>
@@ -42,11 +40,11 @@ export default class product extends React.Component{
 						</div>
 						<h2 className="v-title"><Icon type="search" /> 联系地址</h2>
 							<Row className="location">
-								<Col lg={17}>
-								<div id='allmap' style={{ width:'80%',height:'350px',margin: '0px auto 40px' }}></div>
+								<Col lg={15} offset={1}>
+								<div id='allmap' style={{ height:'350px',margin: '20px auto ' }}></div>
 								</Col>
 							 	<Col lg={7}>
-								 <Card style={{ width: '60%',margin:'15px auto 0'}} bodyStyle={{ padding: 30 }}>
+								 <Card style={{ width: '80%',margin:'45px auto '}} bodyStyle={{ padding: 10 }}>
 									    <div className="custom-image">
 									      <img alt="example" width="100%" src="http://ou1e80oz4.bkt.clouddn.com/QR.jpg" />
 									    </div>
@@ -58,7 +56,6 @@ export default class product extends React.Component{
 								</Col>	
 						 	</Row>
 					</div>			   		
-				</div>
 			</div>				 
 			)
 			}
