@@ -30,7 +30,7 @@ export default class Content extends React.Component {
     const Boxs = data.title.split(/\n/).filter(item => item)
       .map((item,ii) => {
       	return (
-				 <p key={ii}><a href={link[ii]} target="_blank"> {item}</a></p> 
+				 <p key={ii}><a href={link[ii]} target="view_window"> {item}</a></p> 
       		)
       });
 

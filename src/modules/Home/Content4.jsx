@@ -1,8 +1,5 @@
 import React from 'react';
 import Hotpot from '../Hotpot/Hotpot';
-import { Row, Col,Modal } from 'antd';
-import { Tabs } from 'antd';
-const TabPane = Tabs.TabPane;
 
 
 

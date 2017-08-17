@@ -39,7 +39,7 @@ class Content extends React.Component {
           className="img"
           key="img"
         >
-          <img src={item.icon} width="100%" />
+          <img src={item.icon} width="100%" alt=""/>
         </TweenOne>
         <div className="text">
           <TweenOne key="h1" animation={childrenAnim} component="h1">
