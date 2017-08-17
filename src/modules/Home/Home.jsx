@@ -1,6 +1,5 @@
 import React from 'react';
 import enquire from 'enquire.js';
-import { BrowserRouter as Router,Switch, Route,Link } from 'react-router-dom';
 import Content0 from './Content0';
 import Content1 from './Content1';
 import Content2 from './Content2';

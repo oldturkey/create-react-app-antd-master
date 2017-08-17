@@ -7,7 +7,7 @@ export default class Content extends React.Component {
 		return (
 			<div className='whyUse'>
 				<h2>为什么要选择我们？</h2>
-				<Row gutter={16}>
+				<Row gutter={16} style={{margin:0}}>
 					<Col span={8}>
 						<div className="home-reasons-reason-img"><img src="https://zos.alipayobjects.com/rmsportal/ApLJgITwRrlHwIu.png"  alt="technology" /></div>
 						<div className="home-reasons-reson-title">技术</div>

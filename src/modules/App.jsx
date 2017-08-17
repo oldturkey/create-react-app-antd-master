@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
+import { BrowserRouter  as Router, Route} from 'react-router-dom';
 import { BackTop } from 'antd';
 import enquire from 'enquire.js';
 import Footer from './Footer';
@@ -16,7 +16,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMode: false
+      isMode: false,
     };
   }
 
@@ -41,20 +41,22 @@ export default class App extends React.Component {
   }
   render() {
     return (
+      <Router>
     <div className="demo">
       <div className="demo-nav">
         <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode}/>,
       </div>
-      <Switch>
+      
         <Route exact path='/' component={Home} />
         <Route path='/product' component={Product} />
         <Route path='/solve' component={Solve} />
         <Route path='/hotpot' component={Hotpot} />
         <Route path='/about' component={About} />
-       </Switch>
+       
       <Footer id="footer_1_0" key="footer_1_0" isMode={this.state.isMode}/>
       <BackTop style={{right: '22px'}}/>
     </div>
+    </Router>
     );
   }
 }

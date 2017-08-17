@@ -55,7 +55,7 @@ export default class product extends React.Component{
 			ISS:{
 				proImage:'http://ou1e80oz4.bkt.clouddn.com/image1.png\nhttp://ou1e80oz4.bkt.clouddn.com/image1.png\nhttp://ou1e80oz4.bkt.clouddn.com/image1.png\nhttp://ou1e80oz4.bkt.clouddn.com/image1.png\nhttp://ou1e80oz4.bkt.clouddn.com/image1.png\nhttp://ou1e80oz4.bkt.clouddn.com/image1.png\nhttp://ou1e80oz4.bkt.clouddn.com/image1.png\nhttp://ou1e80oz4.bkt.clouddn.com/image1.png\nhttp://ou1e80oz4.bkt.clouddn.com/image1.png',
 				title:'以太网SSI数据采集\nPCISSI数据采集\nSSI的信号模拟器\n以太网SSI数据采集\nPCISSI数据采集\nSSI的信号模拟器',
-				introduce:'杭州钛比科技专注于SSI数据采集解决方案，专业研发定制基于串口、PCI、cPCI、USB和以太网接口的SSI编码器数据采集板卡。适配所有支持标准SSI协议的编码器，性能稳定、应用广泛，同时可以定制实现客户的特殊需求。杭州钛比科技专注于SSI数据采集解决方案多年，技术实力超群，在客户中拥有极佳的口碑。\n测试123\n测试456'
+				introduce:'杭州钛比科技专注于SSI数据采集解决方案，专业研发\m定制基于串口、PCI、cPCI、USB和以太网接口的SSI编码器数据采集板卡。适配所有支持标准SSI协议的编码器，性能稳定、应用广泛，同时可以定制实现客户的特殊需求。杭州钛比科技专注于SSI数据采集解决方案多年，技术实力超群，在客户中拥有极佳的口碑。\n测试123\n测试456'
 			},
 		};
 		const MillimeterData = {
@@ -67,16 +67,16 @@ export default class product extends React.Component{
 		const issChildren = this.getProChildren(proData.ISS);
 		return (
 		  <div className="product">
-		    <h1><a name="1" id="1" > </a>物联网产品</h1>
+		    <h1><a name="1" id="1"> </a>物联网产品</h1>
 		    	<Row className="productWapper">
 		    		{iotChildren}
 		    	</Row>
-		    <h1><a name="2" id="2" > </a>数据采集产品</h1>
+		    <h1><a name="2" id="2"> </a>数据采集产品</h1>
 		    	<Row className="productWapper">
 		    		{ issChildren }
 		    	</Row>
 		  	<div className = "Millimeter">
-		  		<h1><a name="3" id="3" > </a>毫米波产品</h1>
+		  		<h1><a name="3" id="3"> </a>毫米波产品</h1>
 		  		<Row className="productWapper">
 		  			{MilChildren}
 		  			<Col lg={8} xs={8} offset={8} key='download'><Button type="primary" icon="download" style={{ width:'80%',height:'35px',marginTop:'20px'}}>下载文档</Button></Col>
