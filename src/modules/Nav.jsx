@@ -14,7 +14,17 @@ class Header extends React.Component {
       phoneOpen: false,
     };
   }
-
+  componentDidMount() {
+    window.addEventListener('scroll', this.scrollScreen.bind(this));
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scrollScreen.bind(this));
+  }
+  scrollScreen = () => {
+    this.setState({
+      phoneOpen: false,
+    });
+  }
   phoneClick = () => {
     this.setState({
       phoneOpen: !this.state.phoneOpen,
@@ -31,7 +41,9 @@ class Header extends React.Component {
       { title: '热点动态', link: '/hotpot' },
       { title: '关于我们', link: '/about' },
     ];
-    const navChildren = navData.map((data,i) => (<Item key={i}><Link to={data.link}>{data.title}</Link></Item>));
+    const navChildren = navData.map((data,i) => (<Item key={i}><Link to={data.link} onClick={() => {
+            this.phoneClick();
+          }}>{data.title}</Link></Item>));
     
     return (<TweenOne
       component="header"
