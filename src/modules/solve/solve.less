@@ -33,7 +33,9 @@
 		text-indent: 16px;
 	}
 }
-
+.isImg {
+	text-indent:0;
+	}
 @media screen and (max-width: 767px) {
 	.solveBox{
 		width:90%;
@@ -41,7 +43,13 @@
 		.solve {
 		margin-top: 0px;
 		margin-left:0px !important;
-		margin-right:0px !important;	
+		margin-right:0px !important;
+		 .cardBox{
+		 	padding:0!important;
+		 	.ant-card-body{
+		 		padding:14px !important;
+		 	}
+		 }	
 		}
 	}
 }

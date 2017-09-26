@@ -9,6 +9,9 @@ import Solve from './solve/solve';
 import Hotpot from './Hotpot/Hotpot'; 
 import About from './About/About';
 import Nav from './Nav';
+import Solve01 from './Solve01';
+import Solve02 from './Solve02';
+import Solve03 from './Solve03';
 import './App.less';
 
 
@@ -44,15 +47,16 @@ export default class App extends React.Component {
       <Router>
     <div className="demo">
       <div className="demo-nav">
-        <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode}/>,
+        <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode}/>
       </div>
-      
         <Route exact path='/' component={Home} />
         <Route path='/product' component={Product} />
         <Route path='/solve' component={Solve} />
+        <Route path='/solve01' component={Solve01} />
+        <Route path='/solve02' component={Solve02} />
+        <Route path='/solve03' component={Solve03} />
         <Route path='/hotpot' component={Hotpot} />
         <Route path='/about' component={About} />
-       
       <Footer id="footer_1_0" key="footer_1_0" isMode={this.state.isMode}/>
       <BackTop style={{right: '22px'}}/>
     </div>
