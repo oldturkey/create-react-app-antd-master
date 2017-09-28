@@ -1,12 +1,11 @@
 import React from 'react';
-import { Icon,Timeline,Row,Col,Card } from 'antd';
 
 export default class Solve01 extends React.Component{
 	render(){
 		return (
 			<div className="about">
 					<div className = "setup">	
-						<h2 className="v-title"><Icon type="home" /> 项目背景：</h2>
+						<h2 className="v-title"> 项目背景：</h2>
 						<div className="desc" style={{marginBottom: '40'}}>
 							<p>无线传感器网络综合了信息检测、无线通信、信息处理等热门技术，具有感知、计算和通信的能力，目前已被广泛应用在国防军事，环境监测，工业控制，医疗护理和等领域中。无线传感器网络由大量的部署在观测环境附件的廉价低功耗传感器节点组成，目前节点的供电方式是采用电池供电，这样就导致无线传感器网络的生命周期往往取决于节点电池容量大小，一旦节点的能量耗尽，这个节点要么死掉，要么利用人工取更换电池。在某些实际的应用场合当中，节点被随意部署在危险的工作环境里，或者被内置至物体内部，譬如智能家居、生命仪器、结构监测等应用场合，仅仅依靠人工取更替这些废旧电池，首先是难以实现，其次将会造成 人力物力很大的损耗。典型的场景如图所示。</p>
 							<br />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Carousel } from 'antd';
 import enquire from 'enquire.js';
 import Content0 from './Content0';
 import Content1 from './Content1';
@@ -37,9 +38,11 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<div className = 'templates-wrapper'>
-      <video  autoPlay="autoplay" loop="loop" muted className="videoOne">
-        <source src={require('./4.mp4')} type="video/mp4" />
-      </video>
+        <Carousel autoplay effect="fade">
+          <div><img  src={require('./banner4.jpg')} alt="bannerOne"/></div>
+          <div><img  src={require('./banner2.jpg')} alt="bannerTwo"/></div>
+          <div><img  src={require('./banner3.jpg')} alt="bannerThree"/></div>
+        </Carousel>
         <div className = "container">  
           <Content0 />
   			  <Content1 id="content_3_0" key="content_3_0" isMode={this.state.isMode}/>

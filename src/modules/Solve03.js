@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon,Timeline,Row,Col,Card } from 'antd';
+
 
 export default class Solve03 extends React.Component{
 	render(){

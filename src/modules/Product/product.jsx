@@ -82,7 +82,7 @@ export default class product extends React.Component{
 		  		<h1><a name="3" id="3"> </a>毫米波产品</h1>
 		  		<Row className="productWapper">
 		  			{MilChildren}
-		  			<Col lg={8} xs={8} offset={8} key='download'><Button type="primary" icon="download" onClick={this.download} style={{ width:'80%',height:'35px',marginTop:'20px'}}>下载文档</Button></Col>
+		  			<Col lg={8} xs={8} offset={8} key='download'><Button className="downloadButton" type="primary" icon="download" onClick={this.download} style={{ width:'80%',height:'35px',marginTop:'20px'}}>下载文档</Button></Col>
 		  		</Row>
 		  	</div>		     
 		    	<Modal
