@@ -50,7 +50,7 @@ class Content extends React.Component {
             resetStyleBool
           >
             <span id={`${props.id}-img`}>
-              <img width="100%" src={require('./img2.png')} alt="Iot"/>
+              <img width="100%" src="http://oltjsnp86.bkt.clouddn.com/img2.png" alt="Iot"/>
             </span>
           </TweenOne>
         </OverPack>

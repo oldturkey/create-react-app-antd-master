@@ -38,11 +38,7 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<div className = 'templates-wrapper'>
-        <Carousel autoplay effect="fade">
-          <div><img  src={require('./banner4.jpg')} alt="bannerOne"/></div>
-          <div><img  src={require('./banner2.jpg')} alt="bannerTwo"/></div>
-          <div><img  src={require('./banner3.jpg')} alt="bannerThree"/></div>
-        </Carousel>
+        
         <div className = "container">  
           <Content0 />
   			  <Content1 id="content_3_0" key="content_3_0" isMode={this.state.isMode}/>

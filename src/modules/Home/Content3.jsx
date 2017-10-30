@@ -20,7 +20,7 @@ class Content extends React.Component {
       { icon: 'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png', title: '物联网平台', content: '自主研发的产品包括NB-IoT窄带物联网电力抄表系统、NB-IoT终端开发平台' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png', title: '数据采集', content: '自主研发多项数据采集产品和解决方案。' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png', title: '移动', content: '一站式移动PC平台实时监控，动态触手可及。' },
-      { icon: 'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png', title: '毫米波产品', content: '欧洲著名毫米波厂家ELVA-1中国区授权代理(点此查看授权书)' },
+      { icon: 'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png', title: '毫米波产品', content: '欧洲著名毫米波厂家ELVA-1中国区授权代理' },
       { icon: 'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png', title: '大数据', content: '一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。' },
     ];
     const children = blockArray.map((item, i) => {

@@ -37,12 +37,12 @@ class Footer extends React.Component {
     const props = { ...this.props };
     const isMode = props.isMode;
     delete props.isMode;
-    const logoContent = { img: require('./2.png') ,content:'诚信为本 科技至上'};
+    const logoContent = { img: "http://oltjsnp86.bkt.clouddn.com/2.png" ,content:'诚信为本 科技至上'};
     const dataSource = [
       { title: '产品', content: '物联网\n数据采集\n毫米波', contentLink: '/product#1\n/product#2\n/product#3' },
       { title: '解决方案', content: '移动充电与感知应用\n隔墙运动物体检测\n新能源汽车智能监控', contentLink: '/solve01\n/solve02\n/solve03' },
       { title: '联系我们', content: '联系电话：  0571-87755736\n手机：  17767145073\nEMAIL： sales@terabits.cn\n联系人： 陈经理', contentLink: '' },
-      { title: '关注', content: 'http://ou1e80oz4.bkt.clouddn.com/taobao-gray.svg\n http://ou1e80oz4.bkt.clouddn.com/%E6%94%AF%E4%BB%98%E5%AE%9D%E9%92%B1%E5%8C%85.svg\n https://zos.alipayobjects.com/rmsportal/fhJykUTtceAhYFz.svg', contentLink: '#\n#\n#' },
+      { title: '关注', content: 'https://zos.alipayobjects.com/rmsportal/fhJykUTtceAhYFz.svg', contentLink: '#\n#\n#' },
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
     return (<OverPack
@@ -65,7 +65,7 @@ class Footer extends React.Component {
         id={`${props.id}-content`}
       >
         <span>
-          Copyright © 2017 by <a href="/">terabits</a>. All Rights Reserved
+          Copyright © 2017 by <a href="/">Terabits</a>. All Rights Reserved
         </span>
       </TweenOne>
     </OverPack>);

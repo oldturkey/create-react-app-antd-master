@@ -34,7 +34,7 @@ class Content extends React.Component {
             resetStyleBool
           >
             <span id={`${props.id}-img`}>
-              <img width="100%" src={require('./img3.png')} alt=""/>
+              <img width="100%" src="http://oltjsnp86.bkt.clouddn.com/img3.png" alt=""/>
             </span>
           </TweenOne>
           <QueueAnim
