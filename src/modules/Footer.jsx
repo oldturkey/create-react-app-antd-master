@@ -37,7 +37,7 @@ class Footer extends React.Component {
     const props = { ...this.props };
     const isMode = props.isMode;
     delete props.isMode;
-    const logoContent = { img: "http://oltjsnp86.bkt.clouddn.com/2.png" ,content:'诚信为本 科技至上'};
+    const logoContent = { img: "http://owin7pfcv.bkt.clouddn.com/footerLogo.png" ,content:'诚信为本 科技至上'};
     const dataSource = [
       { title: '产品', content: '物联网\n数据采集\n毫米波', contentLink: '/product#1\n/product#2\n/product#3' },
       { title: '解决方案', content: '移动充电与感知应用\n隔墙运动物体检测\n新能源汽车智能监控', contentLink: '/solve01\n/solve02\n/solve03' },

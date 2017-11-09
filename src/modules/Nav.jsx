@@ -55,7 +55,7 @@ class Header extends React.Component {
         animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
         id={`${this.props.id}-logo`}
       >
-        <img width="130%" src="http://oltjsnp86.bkt.clouddn.com/logo.png" alt="logo"/>
+        <img width="130%" src="http://owin7pfcv.bkt.clouddn.com/footerLogo.png" alt="logo"/>
       </TweenOne>
       {isMode ? (<div
         className={`${this.props.className}-phone-nav${this.state.phoneOpen ? ' open' : ''}`}
