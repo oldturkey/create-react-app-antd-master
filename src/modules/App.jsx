@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter  as Router, Route} from 'react-router-dom';
+import { ScrollContext } from 'react-router-scroll-4';
 import { BackTop } from 'antd';
 import enquire from 'enquire.js';
 import Footer from './Footer';
@@ -45,23 +46,25 @@ export default class App extends React.Component {
   render() {
     return (
       <Router>
-    <div className="demo">
-      <div className="demo-nav">
-        <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode}/>
-      </div>
-      <div className="demo-content">
-        <Route exact path='/' component={Home} />
-        <Route path='/product' component={Product} />
-        <Route path='/solve' component={Solve} />
-        <Route path='/solve01' component={Solve01} />
-        <Route path='/solve02' component={Solve02} />
-        <Route path='/solve03' component={Solve03} />
-        <Route path='/hotpot' component={Hotpot} />
-        <Route path='/about' component={About} />
-      </div>
-      <Footer id="footer_1_0" key="footer_1_0" isMode={this.state.isMode}/>
-      <BackTop style={{right: '22px'}}/>
-    </div>
+        <ScrollContext>
+        <div className="demo">
+          <div className="demo-nav">
+            <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode}/>
+          </div>
+          <div className="demo-content">
+            <Route exact path='/' component={Home} />
+            <Route path='/product' component={Product} />
+            <Route path='/solve' component={Solve} />
+            <Route path='/solve01' component={Solve01} />
+            <Route path='/solve02' component={Solve02} />
+            <Route path='/solve03' component={Solve03} />
+            <Route path='/hotpot' component={Hotpot} />
+            <Route path='/about' component={About} />
+          </div>
+          <Footer id="footer_1_0" key="footer_1_0" isMode={this.state.isMode}/>
+          <BackTop style={{right: '22px'}}/>
+        </div>
+        </ ScrollContext>
     </Router>
     );
   }
