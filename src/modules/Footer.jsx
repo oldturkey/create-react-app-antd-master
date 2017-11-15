@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
@@ -20,9 +21,9 @@ class Footer extends React.Component {
         const cItem = item.trim();
         const isImg = cItem.match(/\.(jpg|png|svg|bmp|jpeg)$/i);
         return (<li className={isImg ? 'icon' : ''} key={ii}>
-          <a href={links[ii]} >
+          <Link to={links[ii]} >
             {isImg ? <img src={cItem} width="100%" alt="logo" /> : cItem}
-          </a>
+          </Link>
         </li>);
       });
       return (<li className={data.className} key={i} id={`${this.props.id}-block${i}`}>
@@ -39,10 +40,11 @@ class Footer extends React.Component {
     delete props.isMode;
     const logoContent = { img: "http://owin7pfcv.bkt.clouddn.com/footerLogo.png" ,content:'诚信为本 科技至上'};
     const dataSource = [
-      { title: '产品', content: '物联网\n数据采集\n毫米波', contentLink: '/product#1\n/product#2\n/product#3' },
+      { title: '产品', content: '物联网\n数据采集\n毫米波', contentLink: '/product\n/product\n/product' },
       { title: '解决方案', content: '移动充电与感知应用\n隔墙运动物体检测\n新能源汽车智能监控', contentLink: '/solve01\n/solve02\n/solve03' },
-      { title: '联系我们', content: '联系电话：  0571-87755736\n手机：  17767145073\nEMAIL： sales@terabits.cn\n联系人： 陈经理', contentLink: '' },
-      { title: '关注', content: 'http://ou1e80oz4.bkt.clouddn.com/QR.jpg', contentLink: '#\n#\n#' },
+      { title: '联系我们 ', content: '联系电话： 0571-87755736\n手机： 17767145073\nEMAIL： sales@terabits.cn', contentLink: '/\n/\n/' },
+
+      { title: '关注', content: 'http://ou1e80oz4.bkt.clouddn.com/QR.jpg', contentLink: '/solve01\n/solve02\n/solve03' },
     ];
     const liChildrenToRender = dataSource.map(this.getLiChildren);
     return (<OverPack
@@ -56,7 +58,7 @@ class Footer extends React.Component {
           </p>
           <p>{logoContent.content}</p>
         </li>
-        {liChildrenToRender}
+        {liChildrenToRender} 
       </QueueAnim>
       <TweenOne
         animation={{ y: '+=30', opacity: 0, type: 'from' }}

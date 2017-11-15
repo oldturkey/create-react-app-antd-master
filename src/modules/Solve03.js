@@ -8,7 +8,7 @@ export default class Solve03 extends React.Component{
 			<div className="about">
 					<div className = "setup">	
 						<h2 className="v-title"> 1.项目背景</h2>
-						<div className="desc" style={{marginBottom: '40'}}>
+						<div className="desc" style={{marginBottom: '40px'}}>
 							<p>随着大数据和人工智能技术的不断成熟，其在交通领域的应用也不断深入。本项目旨在通过数据收集、处理、分析构建一个智能汽车数据智能采集与可视化的监控平台。</p>
 							<br />
 						<h2 className="v-title"> 2.项目架构</h2>
@@ -23,7 +23,7 @@ export default class Solve03 extends React.Component{
 						<p>监测界面：系统监测界面下图所示，在监测界面中，我们可以看到用户拥有的车辆以及每个车辆的位置。如果点击车辆，还可以看到车辆的详细信息。</p>
 						<p className="ImgBox" style={{width:'50%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/14.png'} width="100%" alt="img" /> </p>
 						<p>图 :车辆详细信息</p>
-						<p className="ImgBox" style={{width:'50%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/15.png'} width="100%" alt="img" /> </p>
+						<p className="ImgBox" style={{width:'50%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/solve15.png'} width="100%" alt="img" /> </p>
 					</div>
 				</div>			   		
 			</div>				 

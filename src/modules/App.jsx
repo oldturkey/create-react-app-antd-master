@@ -49,6 +49,7 @@ export default class App extends React.Component {
       <div className="demo-nav">
         <Nav id="nav_0_0" key="nav_0_0" isMode={this.state.isMode}/>
       </div>
+      <div className="demo-content">
         <Route exact path='/' component={Home} />
         <Route path='/product' component={Product} />
         <Route path='/solve' component={Solve} />
@@ -57,6 +58,7 @@ export default class App extends React.Component {
         <Route path='/solve03' component={Solve03} />
         <Route path='/hotpot' component={Hotpot} />
         <Route path='/about' component={About} />
+      </div>
       <Footer id="footer_1_0" key="footer_1_0" isMode={this.state.isMode}/>
       <BackTop style={{right: '22px'}}/>
     </div>

@@ -6,7 +6,7 @@ export default class Solve01 extends React.Component{
 			<div className="about">
 					<div className = "setup">	
 						<h2 className="v-title"> 项目背景：</h2>
-						<div className="desc" style={{marginBottom: '40'}}>
+						<div className="desc" style={{marginBottom: '40px'}}>
 							<p>无线传感器网络综合了信息检测、无线通信、信息处理等热门技术，具有感知、计算和通信的能力，目前已被广泛应用在国防军事，环境监测，工业控制，医疗护理和等领域中。无线传感器网络由大量的部署在观测环境附件的廉价低功耗传感器节点组成，目前节点的供电方式是采用电池供电，这样就导致无线传感器网络的生命周期往往取决于节点电池容量大小，一旦节点的能量耗尽，这个节点要么死掉，要么利用人工取更换电池。在某些实际的应用场合当中，节点被随意部署在危险的工作环境里，或者被内置至物体内部，譬如智能家居、生命仪器、结构监测等应用场合，仅仅依靠人工取更替这些废旧电池，首先是难以实现，其次将会造成 人力物力很大的损耗。典型的场景如图所示。</p>
 							<br />
 							<p className="ImgBox" style={{width:'60%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/solve1.png'} width="100%" alt="img" /> </p>
@@ -18,7 +18,7 @@ export default class Solve01 extends React.Component{
 						<h3>1.  基于射频能量收集的无线可充电传感器网平台</h3>
 						<br />
 						<p>无线可充电传感器节点以及射频发射器的硬件设计是实现整个无线可充电传感器网络平台的基础。无线可充电传感器节点的硬件功能是要实现对环境射频能量的收集，并且将之转换为需求的直流电压，从而为传感器核心部分进行供电，保证整个无线传感器网络平台能够协调开展采样、通信、计算等功能。主要内容包括：系统原理图设计、子模块设计、芯片选型、天线选型以及PCB板设计等工作。无线可充电传感器网络节点硬件设计主要分为四大模块：能量收集天线模块、能量转换模块、传感器模块、微处理器模块。其中能量收集天线模块接收射频源发射的电磁波将其转换为高压脉冲；能量转换模块与接收天线进行阻抗匹配后连接，主要功能是将天线所产生的高频高压脉冲转换为直流电压并存储在电容当中；传感器模块是整个系统的信息源，通过超低功耗传感器感知并收集环境信息；微处理器模块是整个节点的核心，包括通信模块与数据处理模块，通信模块通过无线传输方式接收或者发送数据。无线可充电传感器网络节点的硬件设计总体框图如图所示。</p>
-						<p className="ImgBox" style={{width:'24%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/2.png'} width="100%" alt="img" /> </p>
+						<p className="ImgBox" style={{width:'24%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/solve2.png'} width="100%" alt="img" /> </p>
 						<p>本项目所设计的射频发射器采用电磁辐射的射频能量发射方式，可以实现向空间环境持续稳定发射中心频率为915MHz的电磁波，射频发射功率可根据实际需求进行调节，电磁波方向性集中，能量传输效率高。硬件设计结构框图如图3所示，包括振荡器模块、功率放大模块、电源模块以及天线模块。</p>
 						<p className="ImgBox" style={{width:'24%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/3.png'} width="100%" alt="img" /> </p>
 						<p>为了产生稳定的915MHz电磁波为无线可充电传感器网络节点进行供电，本项目设计的射频发射器具有以下优势：<br />
@@ -40,12 +40,12 @@ export default class Solve01 extends React.Component{
 						<p>为了保证无人机飞行安全，本项目在无人机四周部署多个超声波传感器，实时检测四周是否存在障碍物，以实现避障功能，为了满足快速响应，本设计采用了HC-SR04超声波测距模组，其测距精度可达3mm，相应速度10微秒，最大检测距离可达30m，由于无人机携带的气压计在低空误差较大，所以在无人机下部也安置了该超声波模组，用于实现在低空的定高。</p>
 						<h3>3. 精准定位系统</h3>
 						<p>数据网关由ZigBee通信模块、微处理器模块及GSM/GPRS/GPS三合一模块和电源模块组成；其中，电源模块以及三合一模块均与微处理器直接相连，微处理器模块与ZigBee通信模块通过转接板相连，ZigBee通信模块通过PCB接收监测节点发送的道路健康信息数据，将这些数据以及自身节点编号通过串口0发送至微处理器模块，微处理器模块通过串口1将数据发送至GPRS模块，GPRS模块的驱动程序由Arduino单片机实现，GPRS模块将数据发送至服务器。数据网关结构图如图所示。</p>
-						<p className="ImgBox" style={{width:'40%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/6.jpg'} width="100%" alt="img" /> </p>
+						<p className="ImgBox" style={{width:'40%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/solve6.jpg'} width="100%" alt="img" /> </p>
 						<p> 微处理器使用Arduino Mega 2560，Arduino是目前较为流行的电子互动平台，基于单片机系统开发，具有使用简单、功能多样、价格低廉等优点，广泛应用于电子系统设计和互动产品开发方面。</p>
 						<p>由于数据网关由移动电源供电，对节点的能耗无要求，因此本设计中使用串口资源丰富且开发便利的Arduino微控制器，虽然目前使用到的资源不多，但Arduino为后续的开发预留了丰富的IO资源及通信资源。</p>
 						<p>GSM/GPRS/GPS三合一模块使用YIXIN_SIM808_A 模块，该模块是一款高性能工业级的GSM/GPRS/GPS三合一模块（开发板）。YIXIN_SIM808_A 模块采用 SIMCOM 公司的工业级四频GSM/GPRS/GPS 模块：SIM808，可以低功耗实现语音、短信、彩信、数据和传真信息的传输。同时SIM808还具有全球********GPS功能，适用于各类GPS定位导航应用。YIXIN_SIM808_A 模块板载USB转TTL串口电路并支持单独TTL串口连接，TTL串口支持3.3V/5V系统，支持超5V-24V的宽工作电压范围，工作温度为-40℃至+85℃。该模块可将传感器数据通过AT指令发送至服务器，同时可以在检测到无人机飞行轨迹异常时发送报警信号给上位机。检测轨迹异常的方式将预先存储的设定点的GPS信息与无人机悬停时YIXIN_SIM808_A模块接收到的GPS信息进行比较，若误差超过一定值，表明无人机出现飞行异常，并立即通知用户。</p>
 						<p>为了便于用户查询存储服务器端数据，本公司设计了服务器端上位机软件，服务器直接接收数据网关发来的数据并存储在数据库中，当上位机软件运行显示数据的程序时，则会访问数据库，获取所需数据并在窗口中显示出来。具体工作流如下所示，上位机界面如图所示。</p>
-						<p className="ImgBox" style={{width:'60%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/7.png'} width="100%" alt="img" /> </p>
+						<p className="ImgBox" style={{width:'60%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/solve7.png'} width="100%" alt="img" /> </p>
 						<p>数据接收：通过HTTP连接，云服务器接收到YIXIN_SIM808A上GPRS模块发来的传感器数据；</p>
 						<p>解析JSON字段：服务器端先后获取到四个JSON字段，如果这四个JSON字段格式符合要求，则提取出这四个字段的值，获得监测节点的传感器信息；</p>
 						<p>数据存储：将传感器信息数据存储到云端数据库；</p>
@@ -53,7 +53,7 @@ export default class Solve01 extends React.Component{
 						<p>辅助功能：为提升系统运行安全性，增强用户对该系统的控制强度，加入远程重启和报警功能。</p>
 						<h3>3. 系统测试</h3>
 						<p>本项目设计了一种新型的移动充电与感知方案，用于解决在偏远地区无线传感器节点的供能难题，经过多次的试验与改进，系统成功低实现了对高层建筑的结构监测传感器节点供电以及大型农场农作物监测传感器节点进行供电，成功获取传感器数据并上传至云端服务器。现场测试图如图所示。</p>
-						<p className="ImgBox" style={{width:'60%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/8.png'} width="100%" alt="img" /> </p>
+						<p className="ImgBox" style={{width:'60%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/solve8.png'} width="100%" alt="img" /> </p>
 						<p>由于文章篇幅限制，本项目详细的设计方案以及现场测试视频见以下链接（建议超清观看）：<a href="http://v.youku.com/v_show/id_XMTQ5NjEyNTkwMA==.html?spm=a2hzp.8253869.0.0&from=y1.7-2">优酷视频链接</a>；</p>
 					</div>
 				</div>			   		

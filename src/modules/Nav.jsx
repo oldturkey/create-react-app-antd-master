@@ -48,6 +48,7 @@ class Header extends React.Component {
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}
+      style={{ position: 'fixed', width: '100%'}}
       {...props}
     >
       <TweenOne

@@ -8,11 +8,11 @@ export default class Solve02 extends React.Component{
 					<div className = "setup">	
 						<h2 className="v-title"><Icon type="home" /> 隔墙运动物体检测解决方案</h2>
 						<h2 className="v-title">1 系统整体方案</h2>
-						<div className="desc" style={{marginBottom: '40'}}>
+						<div className="desc" style={{marginBottom: '40px'}}>
 							<p>隔墙运动物体检测系统采用基于软件无线电 (Software Defined Radio, SDR)设备及其软件平台的设计方案。如图 1 所示，该系统包括：三个 USRP  N210（其中两个作为发射机、一个作为接收机）、一台外置时钟源和千兆网络交换 机和三个定向喇叭天线。其中 USRP N210 与定向喇叭天线和外置时钟源分别使 用 SMA 连接线进行连接；而电脑与三台 USRP N210 则分别使用网线连接到千 兆网络交换机的端口。</p>
 							<p>传统的硬件无线电通信设备在软件无线电系统中只作为基本的硬件平台， 其他各种数字信号处理均是由软件实现。另外通过软件无线电设备接收回来的 信号也可以保存到电脑上，然后通过 MATLAB 和 Python  等工具进行后续的数 字信号处理与分析。基于软件无线电平台，本文对发射信号进行预编码，以消 除墙面反射等静止物体产生的强背景干扰对墙后运动物体检测的影响。</p>
 							<br />
-							<p className="ImgBox" style={{width:'40%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/9.png'} width="100%" alt="img" /> </p>
+							<p className="ImgBox" style={{width:'40%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/solve9.png'} width="100%" alt="img" /> </p>
 							<br />
 							<p>基于以上难题，杭州钛比科技提出了基于智能无人机的移动充电与感知系统，首次实现智能无人机携带能量源为部署在难以到达地区的无线传感器网络节点充电作业。</p>
 							<br />
@@ -31,7 +31,7 @@ export default class Solve02 extends React.Component{
 						<p>(3) 频率为 2.485 GHz。</p>
 						<p>(4) 带宽为 1 MHz。</p>
 						<br />
-						<p className="ImgBox" style={{width:'40%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/10.png'} width="100%" alt="img" /> </p>
+						<p className="ImgBox" style={{width:'40%',margin:'0 auto'}}><img src={'http://owin7pfcv.bkt.clouddn.com/solve10.png'} width="100%" alt="img" /> </p>
 						<p>上表展示了隔墙运动物体实时检测的准确性，在静止情况，由于特征值远远低于阈值，所以并不会出现将静止情况判断为隔墙物体运动的情形；而在隔 墙物体运动时，其检测的准确性高达 95%，有 5% 的可能性将运动情况下误 判为静止情况，这些场景基本发生在运动物体在离接收机较远的检测区域内运 动。</p>
 						<p>为了更深入地了解该系统的检测功能，可以观看隔墙运动物体检测的演示Demo。演示 Demo 的链接为：<a href="https://youtu.be/tcs7aDdiBQw">youtu链接</a>。</p>
 					</div>

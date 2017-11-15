@@ -2,7 +2,9 @@
 	max-width:1440px;
 	margin:0 auto;
 }
-
+.demo-content {
+        margin-top: 75px;
+    }
 
 @media screen and (max-width: 768px) {
     .videoOne {
@@ -22,13 +24,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .ant-carousel .slick-slide {
-		  height: 300px;
-		  line-height: 300px;
-		  overflow: hidden;
-		}
-	.ant-carousel .slick-slide img {
-	width:100%;
-	height:100%;
-}
+    .templates-wrapper {
+       padding-top: 75px; 
+    }
 }
